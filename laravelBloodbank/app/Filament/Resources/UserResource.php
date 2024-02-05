@@ -82,9 +82,9 @@ class UserResource extends Resource
         return $table
             ->columns([
                 //
-                TextColumn::make('id')->label('Code')->sortable()->searchable()->toggleable(isToggledHiddenByDefault: true), //->sortable()->searchable() ->toggleable()
-                TextColumn::make('name')->sortable()->searchable()->toggleable(isToggledHiddenByDefault: true),
-                TextColumn::make('email')->sortable()->searchable()->toggleable(isToggledHiddenByDefault: true),
+                TextColumn::make('id')->label('Code')->sortable()->searchable(), //->sortable()->searchable() ->toggleable()
+                TextColumn::make('name')->sortable()->searchable(),
+                TextColumn::make('email')->sortable()->searchable(),
                 TextColumn::make('role')->badge()->sortable()->searchable()->toggleable(isToggledHiddenByDefault: true)
                     ->color(function (string $state): string {
                         if ($state === 'superadmin') {
