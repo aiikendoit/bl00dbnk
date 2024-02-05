@@ -26,7 +26,7 @@ class UserResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-users';
 
-    protected static ?string $modelLabel = 'User Management';//model label resource
+    protected static ?string $modelLabel = 'User Management'; //model label resource
 
     public static function form(Form $form): Form
     {
@@ -35,7 +35,12 @@ class UserResource extends Resource
                 //
                 TextInput::make('name')->required(),
                 TextInput::make('email')->email()->required(),
-                TextInput::make('password')->password()->required(),
+                TextInput::make('password')->password()->required()->revealable(),
+
+                // auth()->user()->role !== 'user' ?
+                // TextInput::make('password')->password()->required()->revealable() :
+                // null,
+
                 FileUpload::make('image')->disk('public')->directory('images'),
                 // Select::make('role')
                 //     ->options(User::all()->pluck('role', 'id')),
@@ -71,7 +76,6 @@ class UserResource extends Resource
                         } else {
                             return 'warning';
                         }
-
                     }),
                 ImageColumn::make('image')->label('Avatar'),
                 TextColumn::make('status')
@@ -82,7 +86,6 @@ class UserResource extends Resource
                         } else {
                             return 'danger';
                         }
-
                     }),
             ])
             ->filters([

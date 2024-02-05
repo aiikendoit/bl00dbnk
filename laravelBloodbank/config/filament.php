@@ -71,4 +71,11 @@ return [
 
     'livewire_loading_delay' => 'default',
 
+    //roles policy
+    'roles' => [
+        'superadmin' => 'Super Admin',
+        'admin' => 'Admin',
+        'user' => 'User',
+    ],
+
 ];
