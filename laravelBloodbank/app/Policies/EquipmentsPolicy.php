@@ -4,17 +4,21 @@ namespace App\Policies;
 
 use App\Models\User;
 
-class UserPolicy
+class EquipmentsPolicy
 {
     /**
      * Create a new policy instance.
      */
-    public function viewAny(User $user)
+    public function __construct()
     {
-        return in_array($user->role, ['superadmin', 'admin']);
+        // 
     }
 
     // Add similar methods for other actions like create, update, delete, etc.
+    public function viewAny(User $user)
+    {
+        return in_array($user->role, ['superadmin', 'admin', 'user']);
+    }
 
     public function create(User $user)
     {
@@ -28,6 +32,6 @@ class UserPolicy
 
     public function delete(User $user)
     {
-        return in_array($user->role, ['superadmin']);
+        return in_array($user->role, ['superadmin', 'admin']);
     }
 }

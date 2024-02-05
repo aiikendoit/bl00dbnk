@@ -43,7 +43,7 @@ class EquipmentsResource extends Resource
         return $table
             ->columns([
                 //
-                
+                TextColumn::make('id')->label('Code')->sortable()->searchable(),
                 TextColumn::make('name')->sortable()->searchable(),
                 TextColumn::make('brand')->sortable()->searchable(),
                 TextColumn::make('model')->sortable()->searchable(),
