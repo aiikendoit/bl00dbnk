@@ -29,9 +29,9 @@ class EquipmentsResource extends Resource
         return $form
             ->schema([
                 //
-                TextInput::make('fk_createdBy_user')
-                    ->default($user->id) // Set the default value to the user's ID
-                    ->disabled(), // Make the field disabled to prevent user modification
+                // TextInput::make('fk_createdBy_user')
+                //     ->default($user->id) // Set the default value to the user's ID
+                //     ->disabled(), // Make the field disabled to prevent user modification
                 TextInput::make('name')->required(),
                 TextInput::make('brand')->required(),
                 TextInput::make('model')->required(),
