@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,13 +17,15 @@ class PatientFactory extends Factory
      */
     public function definition(): array
     {
+
         return [
             'patientIdNo' => $this->faker->uuid,
             'lastname' => $this->faker->lastName,
             'firstname' => $this->faker->firstName,
             'middlename' => $this->faker->firstName, // using firstName for middlename as well
             'age' => $this->faker->numberBetween(0, 100), // generating random age between 0 and 100
-            'gender' => $this->faker->randomElement(['male', 'female']), // random gender   
+            'gender' => $this->faker->randomElement(['male', 'female']),
+            
         ];
     }
 }

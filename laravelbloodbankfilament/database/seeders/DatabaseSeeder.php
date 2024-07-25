@@ -40,7 +40,7 @@ class DatabaseSeeder extends Seeder
             'middlename' => 'Domingo',
             'age' => '32',
             'gender' => 'Male',
-
+            
         ]);
     }
 }

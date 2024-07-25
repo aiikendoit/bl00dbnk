@@ -44,4 +44,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function patients(): HasMany
+    {
+        return $this->hasMany(Patient::class, 'created_by');
+    }
 }
