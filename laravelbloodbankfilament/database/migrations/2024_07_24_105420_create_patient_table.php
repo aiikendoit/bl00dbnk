@@ -18,13 +18,10 @@ return new class extends Migration {
             $table->string('middlename');
             $table->integer('age');
             $table->string('gender');
-            $table->unsignedBigInteger('created_by')->nullable(); // Add this column
+
             $table->timestamps();
         });
-        // Add foreign key constraint
-        Schema::table('patients', function (Blueprint $table) {
-            $table->foreign('created_by')->references('id')->on('users');
-        });
+
     }
 
     /**

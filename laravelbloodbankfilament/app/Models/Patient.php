@@ -22,12 +22,9 @@ class Patient extends Model
         'middlename',
         'age',
         'gender',
-        'created_by',
+
         
     ];
 
-    public function createdBy(): BelongsToRelation
-    {
-        return $this->belongsTo(User::class, 'created_by');
-    }
+
 }

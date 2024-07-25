@@ -45,8 +45,4 @@ class User extends Authenticatable
         ];
     }
 
-    public function patients(): HasMany
-    {
-        return $this->hasMany(Patient::class, 'created_by');
-    }
 }
