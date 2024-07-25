@@ -52,7 +52,7 @@ class PatientResource extends Resource
                         'female' => 'Female',
                     ])
                     ->required(),
-
+                    TextInput::make('createdBy.name')->label('Created By')->readOnly(true),
 
 
             ]);
@@ -68,6 +68,7 @@ class PatientResource extends Resource
                 TextColumn::make('middlename')->searchable(),
                 TextColumn::make('age'),
                 TextColumn::make('gender'),
+                TextColumn::make('createdBy.name')->label('Created By'),
             ])
             ->filters([
                 //

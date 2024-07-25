@@ -8,4 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class Transaction extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'transactionIdNo',
+        'patient_id',
+        'amount',
+        'transactionType',
+        'transactionDate',
+    ];
+
+    public function patient()
+    {
+        return $this->belongsTo(Patient::class);
+    }
 }
