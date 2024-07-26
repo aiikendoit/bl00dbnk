@@ -4,7 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "5a70d00f7d3e287b3df84eb1c91ddf4b",
+=======
+
+    "content-hash": "721ef65fe0c3a3b9c82f038d1f6e3f25",
+
+
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -1737,16 +1744,39 @@
         },
         {
             "name": "guzzlehttp/guzzle",
+<<<<<<< HEAD
             "version": "7.9.2",
+=======
+
+            "version": "7.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "d281ed313b989f213357e3be1a179f02196ac99b"
+                "reference": "a629e5b69db96eb4939c1b34114130077dd4c6fc"
             },
             "dist": {
                 "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a629e5b69db96eb4939c1b34114130077dd4c6fc",
+                "reference": "a629e5b69db96eb4939c1b34114130077dd4c6fc",
+
+
+            "version": "7.9.1",
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "a629e5b69db96eb4939c1b34114130077dd4c6fc"
+            },
+            "dist": {
+                "type": "zip",
+<<<<<<< HEAD
                 "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d281ed313b989f213357e3be1a179f02196ac99b",
                 "reference": "d281ed313b989f213357e3be1a179f02196ac99b",
+=======
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a629e5b69db96eb4939c1b34114130077dd4c6fc",
+                "reference": "a629e5b69db96eb4939c1b34114130077dd4c6fc",
+
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
                 "shasum": ""
             },
             "require": {
@@ -1843,7 +1873,13 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/guzzle/guzzle/tree/7.9.2"
+=======
+
+                "source": "https://github.com/guzzle/guzzle/tree/7.9.1"
+
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
             },
             "funding": [
                 {
@@ -1859,7 +1895,13 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-07-24T11:22:20+00:00"
+=======
+
+            "time": "2024-07-19T16:19:57+00:00"
+
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
         },
         {
             "name": "guzzlehttp/promises",
@@ -2210,6 +2252,7 @@
         },
         {
             "name": "laravel/framework",
+
             "version": "v10.48.17",
             "source": {
                 "type": "git",
@@ -2220,6 +2263,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/60f3c8f667b24a09e0392e26b1f40fb9067cdc3c",
                 "reference": "60f3c8f667b24a09e0392e26b1f40fb9067cdc3c",
+
                 "shasum": ""
             },
             "require": {
@@ -2413,7 +2457,9 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
+
             "time": "2024-07-23T16:06:06+00:00"
+
         },
         {
             "name": "laravel/prompts",
@@ -2667,16 +2713,38 @@
         },
         {
             "name": "league/commonmark",
+<<<<<<< HEAD
             "version": "2.5.1",
+=======
+
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "ac815920de0eff6de947eac0a6a94e5ed0fb147c"
+                "reference": "0026475f5c9a104410ae824cb5a4d63fa3bdb1df"
             },
             "dist": {
                 "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/0026475f5c9a104410ae824cb5a4d63fa3bdb1df",
+                "reference": "0026475f5c9a104410ae824cb5a4d63fa3bdb1df",
+
+            "version": "2.4.3",
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/commonmark.git",
+                "reference": "b7a7af3a23a818dcc5836e62e93e4b9ce4704481"
+            },
+            "dist": {
+                "type": "zip",
+<<<<<<< HEAD
                 "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/ac815920de0eff6de947eac0a6a94e5ed0fb147c",
                 "reference": "ac815920de0eff6de947eac0a6a94e5ed0fb147c",
+=======
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/b7a7af3a23a818dcc5836e62e93e4b9ce4704481",
+                "reference": "b7a7af3a23a818dcc5836e62e93e4b9ce4704481",
+
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
                 "shasum": ""
             },
             "require": {
@@ -2769,7 +2837,13 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-07-24T12:52:09+00:00"
+=======
+
+            "time": "2024-07-22T18:18:14+00:00"
+
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
         },
         {
             "name": "league/config",
@@ -7894,7 +7968,70 @@
             "time": "2020-07-09T08:09:16+00:00"
         },
         {
+            "name": "laravel/breeze",
+            "version": "v1.29.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/breeze.git",
+                "reference": "22c53b84b7fff91b01a318d71a10dfc251e92849"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/breeze/zipball/22c53b84b7fff91b01a318d71a10dfc251e92849",
+                "reference": "22c53b84b7fff91b01a318d71a10dfc251e92849",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^10.17",
+                "illuminate/filesystem": "^10.17",
+                "illuminate/support": "^10.17",
+                "illuminate/validation": "^10.17",
+                "php": "^8.1.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^8.0",
+                "phpstan/phpstan": "^1.10"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Breeze\\BreezeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Breeze\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+            "keywords": [
+                "auth",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/breeze/issues",
+                "source": "https://github.com/laravel/breeze"
+            },
+            "time": "2024-03-04T14:35:21+00:00"
+        },
+        {
             "name": "laravel/pint",
+
             "version": "v1.17.0",
             "source": {
                 "type": "git",
@@ -7905,6 +8042,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/pint/zipball/4dba80c1de4b81dc4c4fb10ea6f4781495eb29f5",
                 "reference": "4dba80c1de4b81dc4c4fb10ea6f4781495eb29f5",
+
                 "shasum": ""
             },
             "require": {
@@ -7957,6 +8095,7 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
+
             "time": "2024-07-23T16:40:20+00:00"
         },
         {
@@ -7971,6 +8110,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/sail/zipball/48d89608a3bb5be763c9bb87121d31e7da27c1cb",
                 "reference": "48d89608a3bb5be763c9bb87121d31e7da27c1cb",
+
                 "shasum": ""
             },
             "require": {
@@ -8020,7 +8160,9 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
+
             "time": "2024-07-22T14:36:50+00:00"
+
         },
         {
             "name": "mockery/mockery",
@@ -9782,6 +9924,21 @@
         },
         {
             "name": "spatie/error-solutions",
+<<<<<<< HEAD
+=======
+
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/error-solutions.git",
+                "reference": "a014da18f2675ea15af0ba97f7e9aee59e13964f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/error-solutions/zipball/a014da18f2675ea15af0ba97f7e9aee59e13964f",
+                "reference": "a014da18f2675ea15af0ba97f7e9aee59e13964f",
+
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
             "version": "1.1.1",
             "source": {
                 "type": "git",
@@ -9792,6 +9949,10 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/spatie/error-solutions/zipball/ae7393122eda72eed7cc4f176d1e96ea444f2d67",
                 "reference": "ae7393122eda72eed7cc4f176d1e96ea444f2d67",
+<<<<<<< HEAD
+=======
+
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
                 "shasum": ""
             },
             "require": {
@@ -9844,7 +10005,13 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/error-solutions/issues",
+<<<<<<< HEAD
                 "source": "https://github.com/spatie/error-solutions/tree/1.1.1"
+=======
+
+                "source": "https://github.com/spatie/error-solutions/tree/1.1.0"
+
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
             },
             "funding": [
                 {
@@ -9852,7 +10019,13 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
             "time": "2024-07-25T11:06:04+00:00"
+=======
+
+            "time": "2024-07-22T08:18:22+00:00"
+
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
         },
         {
             "name": "spatie/flare-client-php",
