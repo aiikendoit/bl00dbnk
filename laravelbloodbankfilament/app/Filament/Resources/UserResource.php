@@ -37,10 +37,10 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('id')->label('ID'),
+                // TextColumn::make('id')->label('ID'),
                 TextColumn::make('name')->searchable()->sortable(),
                 TextColumn::make('email')->searchable()->sortable(),
-                IconColumn::make('status')
+                IconColumn::make('status')->sortable()
                     
                     ->color(function (string $state): string {
                         if ($state == 'active') {

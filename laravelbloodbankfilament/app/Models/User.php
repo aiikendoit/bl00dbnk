@@ -53,4 +53,9 @@ class User extends Authenticatable
         return $this->hasMany(Patient::class);
     }
 
+    // public function results()
+    // {
+    // return $this->hasMany(Result::class, 'created_by_user_id');
+    // }
+
 }

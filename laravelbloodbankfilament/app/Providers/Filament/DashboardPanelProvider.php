@@ -23,6 +23,8 @@ class DashboardPanelProvider extends PanelProvider
     public function panel(Panel $panel): Panel
     {
         return $panel
+        ->sidebarCollapsibleonDesktop()
+        // ->sidebarFullyCollapsibleonDesktop()
             ->default()
             ->id('dashboard')
             ->path('dashboard')
@@ -54,5 +56,6 @@ class DashboardPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ]);
+            
     }
 }

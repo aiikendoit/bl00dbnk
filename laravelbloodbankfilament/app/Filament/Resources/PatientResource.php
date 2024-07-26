@@ -29,7 +29,7 @@ class PatientResource extends Resource
                 TextInput::make('patientIdNo')
                     ->label('Patient ID No.')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)->readonly(),
                 TextInput::make('lastname')
 
                     ->required()
@@ -64,9 +64,13 @@ class PatientResource extends Resource
             ->columns([
                 // TextColumn::make('id'),
                 TextColumn::make('patientIdNo')->label('Patient ID No.')->searchable()->sortable(),
-                TextColumn::make('lastname')->searchable()->sortable(),
-                TextColumn::make('firstname')->searchable()->sortable(),
-                TextColumn::make('middlename')->searchable()->sortable(),
+                // TextColumn::make('lastname')->searchable()->sortable(),
+                // TextColumn::make('firstname')->searchable()->sortable(),
+                // TextColumn::make('middlename')->searchable()->sortable(),
+                TextColumn::make('full_name')->label('Full Name')->searchable()->sortable(), // concat lname, fname, mname
+
+
+            
                 TextColumn::make('age')->sortable(),
                 TextColumn::make('gender')->sortable(),
                 // TextColumn::make('user_id')->label('Created By'),

@@ -30,4 +30,10 @@ class Patient extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function getFullNameAttribute()
+{
+    return "{$this->lastname}, {$this->firstname} {$this->middlename}";
+}
+
 }
