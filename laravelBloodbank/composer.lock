@@ -4,10 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
+    "content-hash": "5a70d00f7d3e287b3df84eb1c91ddf4b",
+=======
 
     "content-hash": "721ef65fe0c3a3b9c82f038d1f6e3f25",
 
 
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -1740,6 +1744,9 @@
         },
         {
             "name": "guzzlehttp/guzzle",
+<<<<<<< HEAD
+            "version": "7.9.2",
+=======
 
             "version": "7.9.1",
             "source": {
@@ -1754,6 +1761,7 @@
 
 
             "version": "7.9.1",
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
@@ -1761,9 +1769,14 @@
             },
             "dist": {
                 "type": "zip",
+<<<<<<< HEAD
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/d281ed313b989f213357e3be1a179f02196ac99b",
+                "reference": "d281ed313b989f213357e3be1a179f02196ac99b",
+=======
                 "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a629e5b69db96eb4939c1b34114130077dd4c6fc",
                 "reference": "a629e5b69db96eb4939c1b34114130077dd4c6fc",
 
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
                 "shasum": ""
             },
             "require": {
@@ -1860,9 +1873,13 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
+<<<<<<< HEAD
+                "source": "https://github.com/guzzle/guzzle/tree/7.9.2"
+=======
 
                 "source": "https://github.com/guzzle/guzzle/tree/7.9.1"
 
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
             },
             "funding": [
                 {
@@ -1878,9 +1895,13 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
+            "time": "2024-07-24T11:22:20+00:00"
+=======
 
             "time": "2024-07-19T16:19:57+00:00"
 
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
         },
         {
             "name": "guzzlehttp/promises",
@@ -2692,6 +2713,9 @@
         },
         {
             "name": "league/commonmark",
+<<<<<<< HEAD
+            "version": "2.5.1",
+=======
 
             "version": "2.5.0",
             "source": {
@@ -2705,6 +2729,7 @@
                 "reference": "0026475f5c9a104410ae824cb5a4d63fa3bdb1df",
 
             "version": "2.4.3",
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
@@ -2712,9 +2737,14 @@
             },
             "dist": {
                 "type": "zip",
+<<<<<<< HEAD
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/ac815920de0eff6de947eac0a6a94e5ed0fb147c",
+                "reference": "ac815920de0eff6de947eac0a6a94e5ed0fb147c",
+=======
                 "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/b7a7af3a23a818dcc5836e62e93e4b9ce4704481",
                 "reference": "b7a7af3a23a818dcc5836e62e93e4b9ce4704481",
 
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
                 "shasum": ""
             },
             "require": {
@@ -2807,9 +2837,13 @@
                     "type": "tidelift"
                 }
             ],
+<<<<<<< HEAD
+            "time": "2024-07-24T12:52:09+00:00"
+=======
 
             "time": "2024-07-22T18:18:14+00:00"
 
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
         },
         {
             "name": "league/config",
@@ -9890,6 +9924,8 @@
         },
         {
             "name": "spatie/error-solutions",
+<<<<<<< HEAD
+=======
 
             "version": "1.1.0",
             "source": {
@@ -9902,6 +9938,7 @@
                 "url": "https://api.github.com/repos/spatie/error-solutions/zipball/a014da18f2675ea15af0ba97f7e9aee59e13964f",
                 "reference": "a014da18f2675ea15af0ba97f7e9aee59e13964f",
 
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
             "version": "1.1.1",
             "source": {
                 "type": "git",
@@ -9912,7 +9949,10 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/spatie/error-solutions/zipball/ae7393122eda72eed7cc4f176d1e96ea444f2d67",
                 "reference": "ae7393122eda72eed7cc4f176d1e96ea444f2d67",
+<<<<<<< HEAD
+=======
 
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
                 "shasum": ""
             },
             "require": {
@@ -9965,9 +10005,13 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/error-solutions/issues",
+<<<<<<< HEAD
+                "source": "https://github.com/spatie/error-solutions/tree/1.1.1"
+=======
 
                 "source": "https://github.com/spatie/error-solutions/tree/1.1.0"
 
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
             },
             "funding": [
                 {
@@ -9975,9 +10019,13 @@
                     "type": "github"
                 }
             ],
+<<<<<<< HEAD
+            "time": "2024-07-25T11:06:04+00:00"
+=======
 
             "time": "2024-07-22T08:18:22+00:00"
 
+>>>>>>> b389bc7d1480f606b58bb8854de7773c75ef54f1
         },
         {
             "name": "spatie/flare-client-php",

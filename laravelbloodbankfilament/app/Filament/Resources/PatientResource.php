@@ -29,7 +29,7 @@ class PatientResource extends Resource
                 TextInput::make('patientIdNo')
                     ->label('Patient ID No.')
                     ->required()
-                    ->maxLength(255),
+                    ->maxLength(255)->readonly(),
                 TextInput::make('lastname')
 
                     ->required()
@@ -52,7 +52,7 @@ class PatientResource extends Resource
                         'female' => 'Female',
                     ])
                     ->required(),
-                    TextInput::make('createdBy.name')->label('Created By')->readOnly(true),
+                // TextInput::make('createdBy.name')->label('Created By')->readOnly(true),
 
 
             ]);
@@ -62,13 +62,19 @@ class PatientResource extends Resource
     {
         return $table
             ->columns([
-                TextColumn::make('patientIdNo')->label('Patient ID No.')->searchable(),
-                TextColumn::make('lastname')->searchable(),
-                TextColumn::make('firstname')->searchable(),
-                TextColumn::make('middlename')->searchable(),
-                TextColumn::make('age'),
-                TextColumn::make('gender'),
-                TextColumn::make('createdBy.name')->label('Created By'),
+                // TextColumn::make('id'),
+                TextColumn::make('patientIdNo')->label('Patient ID No.')->searchable()->sortable(),
+                // TextColumn::make('lastname')->searchable()->sortable(),
+                // TextColumn::make('firstname')->searchable()->sortable(),
+                // TextColumn::make('middlename')->searchable()->sortable(),
+                TextColumn::make('full_name')->label('Full Name')->searchable()->sortable(), // concat lname, fname, mname
+
+
+            
+                TextColumn::make('age')->sortable(),
+                TextColumn::make('gender')->sortable(),
+                // TextColumn::make('user_id')->label('Created By'),
+                TextColumn::make('user.name')->label('Created By'),
             ])
             ->filters([
                 //

@@ -23,12 +23,14 @@ class DashboardPanelProvider extends PanelProvider
     public function panel(Panel $panel): Panel
     {
         return $panel
+        ->sidebarCollapsibleonDesktop()
+        // ->sidebarFullyCollapsibleonDesktop()
             ->default()
             ->id('dashboard')
             ->path('dashboard')
             ->login()
             ->colors([
-                'primary' => Color::Amber,
+                'primary' => Color::hex('#30567d'),
             ])
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -54,5 +56,6 @@ class DashboardPanelProvider extends PanelProvider
             ->authMiddleware([
                 Authenticate::class,
             ]);
+            
     }
 }

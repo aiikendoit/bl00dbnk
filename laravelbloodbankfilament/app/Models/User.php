@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+
+use Illuminate\Database\Eloquent\Model;
+
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
@@ -44,5 +47,15 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function patients()
+    {
+        return $this->hasMany(Patient::class);
+    }
+
+    // public function results()
+    // {
+    // return $this->hasMany(Result::class, 'created_by_user_id');
+    // }
 
 }

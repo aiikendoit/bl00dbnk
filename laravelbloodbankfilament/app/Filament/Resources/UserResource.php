@@ -37,16 +37,25 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-                //
-                TextColumn::make('name')->searchable(),
-                TextColumn::make('email')->searchable(),
-                IconColumn::make('status')->icon(fn (string $state): string => match ($state) {
-                    'active' => 'heroicon-o-check-badge',
-                    'inactive' => 'heroicon-o-x-circle',
+                // TextColumn::make('id')->label('ID'),
+                TextColumn::make('name')->searchable()->sortable(),
+                TextColumn::make('email')->searchable()->sortable(),
+                IconColumn::make('status')->sortable()
                     
-                }),
+                    ->color(function (string $state): string {
+                        if ($state == 'active') {
+                            return 'success';
+                        } else {
+                            return 'danger';
+                        }
+                    })
+                    ->icon(fn(string $state): string => match ($state) {
+                        'active' => 'heroicon-o-check-badge',
+                        'inactive' => 'heroicon-o-x-circle',
+
+                    }),
                 TextColumn::make('role')->searchable(),
-                
+
             ])
             ->filters([
                 //

@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo as BelongsToRelation;
+
 
 class Patient extends Model
 {
@@ -23,8 +23,17 @@ class Patient extends Model
         'age',
         'gender',
 
-        
+
     ];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function getFullNameAttribute()
+{
+    return "{$this->lastname}, {$this->firstname} {$this->middlename}";
+}
 
 }
