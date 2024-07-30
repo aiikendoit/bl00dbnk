@@ -39,6 +39,7 @@ class ResultResource extends Resource
                 // ->relationship('patient', 'lastname'),
                 
                 Select::make('patient_id')->required()
+                ->preload() //to avoid error search
                 ->label('Patient')
                 ->searchable()
                 ->columnSpan('full') // Make the input full width
@@ -49,6 +50,7 @@ class ResultResource extends Resource
 
                 Select::make('bgrh')->label('BGRH')->required()
                 ->columnSpan('full') // Make the input full width
+                ->native(false)
                 ->options([
                     '"A" Positive' => ' "A" Positive',
                     '"A" Negative' => ' "A" Negative',
@@ -60,14 +62,14 @@ class ResultResource extends Resource
                     '"O" Negative' => ' "O" Negative',
                 ]),
 
-                Select::make('result')->required()
+                Select::make('result')->required()->native(false)
                 ->columnSpan('full') // Make the input full width
                 ->options([
                     'Positive' => ' Positive ',
                     'Negative' => ' Negative ',
                 ]),
 
-                Select::make('user_id')->required()
+                Select::make('user_id')->required()->native(false)
                 ->columnSpan('full') // Make the input full width
                 ->label('Med Tech') //created by
                 ->relationship('user', 'name')
