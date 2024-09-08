@@ -22,6 +22,7 @@ class Patient extends Model
         'middlename',
         'age',
         'gender',
+        'user_id',
 
 
     ];
