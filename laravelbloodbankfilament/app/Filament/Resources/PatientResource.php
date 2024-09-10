@@ -67,10 +67,21 @@ class PatientResource extends Resource
                     ->default(auth()->id()),
 
                 // TextInput for displaying the user's name, readOnly
+                // Forms\Components\TextInput::make('user_name')
+                //     ->default(auth()->user()->name) // Display the authenticated user's name
+                //     ->label('Requested By')
+                //     ->readOnly(),
+
+                // TextInput for displaying the user's name, readOnly
                 Forms\Components\TextInput::make('user_name')
                     ->default(auth()->user()->name) // Display the authenticated user's name
                     ->label('Requested By')
-                    ->readOnly(),
+                    ->readOnly()
+                    ->afterStateHydrated(function (TextInput $component, $state, $record) {
+                        if ($record) {
+                            $component->state($record->user->name); // Set the state to the related user's name when editing
+                        }
+                    }),
             ]);
     }
 
