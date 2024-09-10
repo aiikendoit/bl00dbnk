@@ -7,6 +7,9 @@ use App\Filament\Resources\UserResource\RelationManagers;
 use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\ToggleButtons;
+use Filament\Tables\Columns\ToggleColumn;
+use Filament\Tables\Columns\SelectColumn;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -30,6 +33,18 @@ class UserResource extends Resource
                 TextInput::make('name')->required(),
                 TextInput::make('email')->email()->required(),
                 TextInput::make('password')->password()->revealable()->required(),
+                ToggleButtons::make('status')
+                    ->options([
+                        'active' => 'Active',
+                        'inactive' => 'Inactive',
+                    ])
+                    ->colors([
+                        'inactive' => 'danger',
+                        // 'inactive' => 'warning',
+                        'active' => 'success',
+                    ])
+                    ->grouped()
+                    ->label('Status'),
             ]);
     }
 
@@ -40,8 +55,8 @@ class UserResource extends Resource
                 // TextColumn::make('id')->label('ID'),
                 TextColumn::make('name')->searchable()->sortable(),
                 TextColumn::make('email')->searchable()->sortable(),
+
                 IconColumn::make('status')->sortable()
-                    
                     ->color(function (string $state): string {
                         if ($state == 'active') {
                             return 'success';
@@ -52,8 +67,14 @@ class UserResource extends Resource
                     ->icon(fn(string $state): string => match ($state) {
                         'active' => 'heroicon-o-check-badge',
                         'inactive' => 'heroicon-o-x-circle',
-
                     }),
+
+                // SelectColumn::make('status')
+                //     ->options([
+                //         'active' => 'active',
+                //         'inactive' => 'inactive',
+                //     ])
+                //     ->selectablePlaceholder(false),
                 TextColumn::make('role')->searchable(),
 
             ])

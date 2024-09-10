@@ -4,8 +4,10 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\ResultResource\Pages;
 use App\Filament\Resources\ResultResource\RelationManagers;
+use App\Filament\Resources\ResultResource\RelationManagers\PatientsRelationManager;
 use App\Models\Result;
 use Filament\Forms;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -81,11 +83,20 @@ class ResultResource extends Resource
                     ->default(auth()->id()),
 
                 // TextInput for displaying the user's name, readOnly
+                // Forms\Components\TextInput::make('user_name')
+                //     ->default(auth()->user()->name) // Display the authenticated user's name
+                //     ->label('Med Tech')
+                //     ->readOnly(),
+
                 Forms\Components\TextInput::make('user_name')
                     ->default(auth()->user()->name) // Display the authenticated user's name
-                    ->label('Med Tech')
-                    ->readOnly(),
-
+                    ->label('Requested By')
+                    ->readOnly()
+                    ->afterStateHydrated(function (TextInput $component, $state, $record) {
+                        if ($record) {
+                            $component->state($record->user->name); // Set the state to the related user's name when editing
+                        }
+                    }),
             ]);
 
     }
@@ -121,7 +132,7 @@ class ResultResource extends Resource
     public static function getRelations(): array
     {
         return [
-            //
+            
         ];
     }
 
